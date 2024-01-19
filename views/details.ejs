@@ -1,0 +1,26 @@
+<%- include('header')%>
+  <%- include('nav')%>
+
+  <div id="details">
+   <h1>Show Details</h1>
+   <br>
+
+   <h2><%= books.name%></h2>
+   <br>
+   <h2><%= books.author%></h2>
+   <br>
+   <h2><%= books.description%></h2>
+   <br>
+   <img height="200" src="<%= books.image%>" alt="">
+   <br>
+
+   <div id="btn">
+    <a  href="/delete/<%= index%>">Delete</a>
+    &nbsp;&nbsp;
+    <a href="/update/<%= index%>">Update</a>
+   </div>
+   
+
+  </div>
+
+  <%- include('footer')%>
